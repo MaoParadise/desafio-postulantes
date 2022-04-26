@@ -28,3 +28,14 @@
     $ cd desafio-postulantes
     $ npm install
     $ npm start # Si esta en un ambiente de desarrollo se sugiere usar npm run dev.
+
+
+### sobre la estructura del proyecto
+
+la lógica se encuentra escrita en la carpeta src, esta divida en la carpeta **/controllers** para manejar los eventos de llamados de la API, la carpeta **/routes** para almacenar las rutas permitas de la API _**cualquier otra ruta que se desee agregar en el futuro tiene que estar aquí**_, la carpeta **utils** para guardar contenido externo e **index.js** ( inicializa, configura y arranca el servidor) 
+###
+    ./src  
+        /controllers
+        /routes
+        /utils  
+        index.js
