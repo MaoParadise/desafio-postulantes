@@ -1,17 +1,30 @@
-# Desafio Postulantes
+## END POINTS
 
-Con el fin de seleccionar a nuestros 2 developers, tenemos el siguente desafio.
+### / - Obtiene el Mensaje de Bienvenida de la API
+      {
+    "title": String,
+    "version": "1.0.0",
+    "author": "Carlos Pasten Bravo",
+    "description": String,
+    "message": "to obtain the data from the table of the website of the SII /api/All"
+}
 
-De la siguente URL [Link](https://www.sii.cl/servicios_online/1047-nomina_inst_financieras-1714.html) es necesario crear un código que sea capaz de parsear la pagina web y devolver un json con esta información.
-![image](https://user-images.githubusercontent.com/3030497/164536276-9eb79d10-4fb0-4943-a15f-2536a8586330.png)
 
-El JSON de respuesta puede venir en el formato que estimes conveniente.
+### /api/All - GET - Obtiene la nómina registro voluntario de instituciones financieras extranjeras e internacionales
+    parametros de salida: 
+        {
+            "message": String,
+            "data" : Array[JSON]
+            "state": "success" || "failed"
+            
+        }
+    /*
 
-## Preguntas Frecuentes
+## Instalacion
+###
+    $ git clone https://github.com/MaoParadise/desafio-postulantes
 
-- Tipos de entrega, cualquiera de los siguiente sirve
-  - API caso generico
-  - API caso particular
-  - Script para el caso particular
-- Lenguaje: El que más te guste
-- Plazo de Entrega: Indefinido, iremos entrevistando a los que van terminando primero.
+###
+    $ cd desafio-postulantes
+    $ npm install
+    $ npm start # Si esta en un ambiente de desarrollo se sugiere usar npm run dev.
