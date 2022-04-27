@@ -9,8 +9,8 @@ const app = express();
 app.set('port', process.env.PORT || 3500);
 app.set('json spaces', 4);
 
+//Routes
 app.use(require('./routes/index'));
-
 app.use('/api/', require('./routes/foreingFinancialRoute'));
 
 // Starting the server
